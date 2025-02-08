@@ -1,0 +1,49 @@
+site_name: Deck User Guide
+theme:
+  name: material
+  favicon: assets/logo.png
+  palette:
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      toggle:
+        icon: material/weather-night
+        name: Switch to Dark mode
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to Light mode
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+repo_url: https://github.com/sjb-deck/deck
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Creating an Account: getting-started/creating-an-account.md
+    - Navigating the User Interface: getting-started/navigating-the-user-interface.md
+    - User Roles and Permissions: getting-started/user-roles-and-permissions.md
+  - Managing Your Account: managing-your-account.md
+  - Features:
+    - Items:
+      - Creating Items: features/items/creating-an-item.md
+      - Withdrawing/Depositing Items: features/items/withdrawing-depositing-items.md
+      - Loaning Items: features/items/loaning-items.md
+      - View Item List: features/items/view-item-list.md
+    - Kits:
+      - Creating Blueprints: features/kits/creating-blueprints.md
+      - Creating Kits: features/kits/creating-kits.md
+      - Loaning Kits: features/kits/loaning-kits.md
+      - Returning Kits: features/kits/returning-kits.md
+      - Restocking Kits: features/kits/restocking-kits.md
+      - View Kit: features/kits/view-kit.md
+    - Alerts: features/alerts.md
+    - Admin Actions:
+      - View Transactions: features/admin-actions/view-transactions.md
+      - Reverting Transactions: features/admin-actions/reverting-transactions.md
+  - Troubleshooting and FAQs: troubleshooting-and-faqs.md
